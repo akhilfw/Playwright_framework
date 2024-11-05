@@ -1,8 +1,8 @@
-name: Cypress tests for CI/CD
+name: Playwright tests for CI/CD
 on: [push, workflow_dispatch]
 env:
-  CYPRESS_USERNAME: ${{ secrets.USERNAME }} 
-  CYPRESS_PASSWORD: ${{ secrets.PASSWORD }} 
+  USERNAME: ${{ secrets.USERNAME }} 
+  PASSWORD: ${{ secrets.PASSWORD }} 
   
 jobs:     
  cypress-run:
