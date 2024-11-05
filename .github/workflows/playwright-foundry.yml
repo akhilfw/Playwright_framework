@@ -5,7 +5,7 @@ env:
   PASSWORD: ${{ secrets.PASSWORD }} 
   
 jobs:     
- cypress-run:
+ playwright-run:
     runs-on: ubuntu-latest
     steps:
          - name: Checkout
