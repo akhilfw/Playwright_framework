@@ -30,8 +30,8 @@ Given('I am on the login page', async function () {
 
 When('I enter valid credentials', async function () {
   if (this.page) {
-    const username: string = process.env.MY_USERNAME as string;
-    const password: string = process.env.MY_PASSWORD as string; 
+    const username: string = process.env.USERNAME as string;
+    const password: string = process.env.PASSWORD as string; 
    // await loginPage?.login('1724345481.richmond@inup97z9.mailosaur.net', 'Password@1');
    await loginPage?.login(username, password);
   } else {
@@ -41,8 +41,8 @@ When('I enter valid credentials', async function () {
 
 When('I enter valid credentials {string} and {string}', async function (email, password) {
   if (this.page) {
-    const uEmail: string = process.env.MY_USERNAME as string;
-    const uPassword: string = process.env.MY_PASSWORD as string; 
+    const uEmail: string = process.env.USERNAME as string;
+    const uPassword: string = process.env.PASSWORD as string; 
    if(email === 'valid email' && password === 'valid password'){
     await loginPage?.login(uEmail, uPassword);
    }else if(email === 'empty'){
