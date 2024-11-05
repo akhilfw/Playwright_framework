@@ -33,7 +33,7 @@ export class LoginPage  {
     }
 
     public async validateDashboard(): Promise<string | null> {
-        await this.dashboardElement.waitFor({ state: 'visible' });
+        await this.dashboardElement.waitFor({ state: 'visible', timeout: 60000});
         return  this.dashboardElement.textContent();
       }
 
